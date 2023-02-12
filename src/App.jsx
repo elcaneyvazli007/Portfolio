@@ -5,6 +5,7 @@ import About from "./pages/about";
 import Portfolio from "./pages/portfolio";
 import Contact from "./pages/contact";
 import Blog from "./pages/blog";
+import Blogtext from "./pages/blogtext";
 import { Routes, Link, Route } from "react-router-dom";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blogtext" element={<Blogtext />} />
       </Routes>
     </div>
   );

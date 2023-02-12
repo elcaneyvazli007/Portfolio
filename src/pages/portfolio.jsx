@@ -15,8 +15,7 @@ const Portfolio = () => {
           <p className="text-[2rem] text-center text-white font-extralight">A FEW RECENT DESIGN AND CODING PROJECTS. WANT TO SEE MORE? EMAIL ME</p>
         </div>
 
-        <div className="flex md:flex-row flex-col flex-wrap items-center justify-center gap-[3rem]">
-          <div className="sm:w-[30rem] w-[25rem] sm:h-[20rem] h-[15rem] rounded-[1rem]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[3rem]">
             <img
               src={portfolioimg}
               onClick={() => setModal(!modal)}
@@ -24,8 +23,6 @@ const Portfolio = () => {
               alt=""
               className="w-full h-full object-cover rounded-[1rem]"
             />
-          </div>
-          <div className="sm:w-[30rem] w-[25rem] sm:h-[20rem] h-[15rem] rounded-[1rem]">
             <img
               src={portfolioimg}
               onClick={() => setModal(!modal)}
@@ -33,8 +30,6 @@ const Portfolio = () => {
               alt=""
               className="w-full h-full object-cover rounded-[1rem]"
             />
-          </div>
-          <div className="sm:w-[30rem] w-[25rem] sm:h-[20rem] h-[15rem] rounded-[1rem]">
             <img
               src={portfolioimg}
               onClick={() => setModal(!modal)}
@@ -42,7 +37,48 @@ const Portfolio = () => {
               alt=""
               className="w-full h-full object-cover rounded-[1rem]"
             />
-          </div>
+            <img
+              src={portfolioimg}
+              onClick={() => setModal(!modal)}
+              draggable="false"
+              alt=""
+              className="w-full h-full object-cover rounded-[1rem]"
+            />
+            <img
+              src={portfolioimg}
+              onClick={() => setModal(!modal)}
+              draggable="false"
+              alt=""
+              className="w-full h-full object-cover rounded-[1rem]"
+            />
+            <img
+              src={portfolioimg}
+              onClick={() => setModal(!modal)}
+              draggable="false"
+              alt=""
+              className="w-full h-full object-cover rounded-[1rem]"
+            />
+            <img
+              src={portfolioimg}
+              onClick={() => setModal(!modal)}
+              draggable="false"
+              alt=""
+              className="w-full h-full object-cover rounded-[1rem]"
+            />
+            <img
+              src={portfolioimg}
+              onClick={() => setModal(!modal)}
+              draggable="false"
+              alt=""
+              className="w-full h-full object-cover rounded-[1rem]"
+            />
+            <img
+              src={portfolioimg}
+              onClick={() => setModal(!modal)}
+              draggable="false"
+              alt=""
+              className="w-full h-full object-cover rounded-[1rem]"
+            />
           {modal && <Modal modal={modal} setModal={setModal} />}
         </div>
       </div>
