@@ -3,7 +3,7 @@ import './home.css'
 import profil from "../img/2.jpg";
 import hand from "../img/hand.svg";
 import Typical from "react-typical";
-import Button from "../components/button";
+import Buttonlink from "../components/buttonlink";
 const home = () => {
   return (
     <div className="home h-screen w-screen flex items-center">
@@ -47,8 +47,8 @@ const home = () => {
               design.
             </p>
             <div className="flex items-center gap-10 pt-[3rem]">
-              <Button text="More About Me" link="/about"/>
-              <Button text="Portfolio" link="/portfolio"/>
+              <Buttonlink text="More About Me" link="/about"/>
+              <Buttonlink text="Portfolio" link="/portfolio"/>
             </div>
           </div>
         </div>

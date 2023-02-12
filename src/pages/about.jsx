@@ -7,7 +7,7 @@ const about = () => {
   return (
     <div className="bg-black">
       <div className="container mx-auto">
-        <h1 className="text-[6rem] text-white font-black text-center">
+        <h1 className="text-[4rem] md:text-[6rem] text-white font-black text-center mt-[8rem] md:mt-[0rem]">
           About <span className="text-primary"> Me </span>{" "}
         </h1>
         <div className="flex flex-col md:flex-row items-center justify-between gap-10">

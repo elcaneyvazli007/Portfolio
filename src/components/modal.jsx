@@ -56,7 +56,7 @@ const modal = ({ modal, setModal }) => {
                 Budget: <span className="font-normal">1000$</span>
               </p>
             </div>
-            <Button text="PREVIEW" link="/portfolio"/>
+            <Button text="PREVIEW" link="https://demo.futurestudies.az/"/>
           </div>
         </div>
         <div className="absolute top-0 right-0 p-[2rem]">
