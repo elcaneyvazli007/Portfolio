@@ -60,7 +60,7 @@ const contact = () => {
               Hello.. please fill out the form below and I will reply you
               shortly.
             </p>
-            <div className="flex flex-col md:flex-row items-center justify-between gap-[3rem]">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-[3rem]">
               <Input label="Your Name" type="text" />
               <Input label="Your Email" type="email" />
             </div>

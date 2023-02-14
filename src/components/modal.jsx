@@ -15,6 +15,7 @@ const modal = ({ modal, setModal }) => {
       <div className="relative flex flex-col z-50 items-start p-[5rem] w-[30rem] sm:w-[50rem] md:w-[70rem] h-screen bg-grey">
         <img
           src={portfolioimg}
+          draggable="false"
           className="w-full h-[10rem] sm:h-[20rem] md:h-[30rem] object-cover rounded-[1rem]"
           alt=""
         />
