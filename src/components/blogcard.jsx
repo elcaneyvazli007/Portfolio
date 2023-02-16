@@ -8,11 +8,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 const blogcard = () => {
   return (
     <div className="flex flex-col items-start gap-[1rem] bg-grey rounded-[2rem]">
-      <div className="overflow-hidden rounded-t-[1.5rem] ">
+      <div className="overflow-hidden rounded-t-[1.5rem] w-[100%] h-[30rem]">
         <img
           src={blogpost}
           draggable="false"
-          className="sm:w-[100%] md:w-[50rem] h-[30rem] object-cover rounded-t-[1.5rem] hover:scale-125 transition duration-500 ease-in-out"
+          className="w-[100%] h-[100%] object-cover rounded-t-[1.5rem] hover:scale-125 transition duration-500 ease-in-out"
           alt=""
         />
       </div>

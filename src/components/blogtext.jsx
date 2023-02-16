@@ -1,19 +1,18 @@
 import React from "react";
 import blogpost from "../img/blogpost.jpg";
 import "./blogtext.css";
-import { AiOutlineUser } from "react-icons/ai";
 import profil from "../img/2.jpg";
 
 const blogtext = () => {
   return (
     <div className="container mx-auto mt-[10rem] md:mt-[5rem] mb-[5rem]">
       <div className=" flex flex-col md:flex-row items-center md:items-start gap-[3rem] mb-[3rem] border-b-4 border-primary pb-[1rem]">
-        <div className="flex-1 rounded-[1.5rem] sm:w-[40rem] sm:h-[40rem] md:w-[30rem] md:h-[30rem] lg:w-[50rem] lg:h-[50rem] overflow-hidden ">
+        <div className="flex-1 rounded-[1.5rem] md:w-[30rem] md:h-[30rem] lg:w-[50rem] lg:h-[50rem] overflow-hidden ">
           <img
             src={blogpost}
             draggable="false"
             className="w-[100%] h-[100%] object-cover rounded-[1.5rem] hover:scale-125 transition duration-500 ease-in-out"
-            alt=""
+            alt="blog"
           />
         </div>
         <div className="flex-1 flex flex-col items-start gap-[5rem]">
@@ -55,6 +54,10 @@ const blogtext = () => {
         Proin magna dolor, vestibulum vitae orci dapibus, commodo eleifend
         nulla. Integer tincidunt dictum neque ac tempus. Aliquam in laoreet
         nisi. Ut nec libero dolor. Class aptent taciti sociosqu ad litora
+        torquent per conubia nostra, per inceptos himenaeos. Maecenas gravida,
+        lorem et sagittis ullamcorper, erat est rutrum lacus, in mollis risus
+        mauris a nisi. Nullam non nisi nec ligula elementum cursus pulvinar nec
+        libero.Class aptent taciti sociosqu ad litora
         torquent per conubia nostra, per inceptos himenaeos. Maecenas gravida,
         lorem et sagittis ullamcorper, erat est rutrum lacus, in mollis risus
         mauris a nisi. Nullam non nisi nec ligula elementum cursus pulvinar nec

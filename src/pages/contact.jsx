@@ -5,7 +5,7 @@ import Input from "../components/input";
 
 const contact = () => {
   return (
-    <div className="container mx-auto mb-[3rem]">
+    <div className="container mx-auto mb-[5rem]">
       <div className="flex flex-col gap-[5rem]">
         <div>
           <h1 className="text-white text-[4rem] md:text-[6rem] mt-[10rem] md:mt-[0rem] font-black text-center">

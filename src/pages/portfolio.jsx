@@ -6,7 +6,7 @@ const Portfolio = () => {
   const [modal, setModal] = React.useState(false);
 
   return (
-    <div className="bg-black container mx-auto">
+    <div className="bg-black container mx-auto mb-[5rem]">
       <div className="flex flex-col gap-[3rem]">
         <div>
           <h1 className="sm:text-[6rem] text-[4rem] text-center text-white font-black sm:mt-[0] mt-[10rem]">

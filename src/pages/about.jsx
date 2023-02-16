@@ -5,7 +5,7 @@ import Progress from "../components/progress";
 
 const about = () => {
   return (
-    <div className="bg-black">
+    <div className="bg-black mb-[5rem]">
       <div className="container mx-auto">
         <h1 className="text-[4rem] md:text-[6rem] text-white font-black text-center mt-[8rem] md:mt-[0rem]">
           About <span className="text-primary"> Me </span>{" "}
