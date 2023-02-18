@@ -1,7 +1,5 @@
 import React from "react";
-import blogpost from "../img/blogpost.jpg";
 import "./blogtext.css";
-import profil from "../img/2.jpg";
 
 const blogtext = () => {
   return (
@@ -9,7 +7,7 @@ const blogtext = () => {
       <div className=" flex flex-col md:flex-row items-center md:items-start gap-[3rem] mb-[3rem] border-b-4 border-primary pb-[1rem]">
         <div className="flex-1 rounded-[1.5rem] md:w-[30rem] md:h-[30rem] lg:w-[50rem] lg:h-[50rem] overflow-hidden ">
           <img
-            src={blogpost}
+            src='img/blogpost.jpg'
             draggable="false"
             className="w-[100%] h-[100%] object-cover rounded-[1.5rem] hover:scale-125 transition duration-500 ease-in-out"
             alt="blog"
@@ -18,7 +16,7 @@ const blogtext = () => {
         <div className="flex-1 flex flex-col items-start gap-[5rem]">
           <div className="flex flex-row items-center gap-[2rem]">
             <img
-              src={profil}
+              src='img/2.jpg'
               draggable="false"
               className="h-[7rem] w-[7rem] rounded-full object-cover border-2 border-primary"
               alt=""

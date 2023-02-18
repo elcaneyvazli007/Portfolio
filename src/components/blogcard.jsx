@@ -1,6 +1,4 @@
 import React from "react";
-import Buttonlink from "./buttonlink";
-import blogpost from "../img/blogpost.jpg";
 import "./blogcard.css";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -10,7 +8,7 @@ const blogcard = () => {
     <div className="flex flex-col items-start gap-[1rem] bg-grey rounded-[2rem]">
       <div className="overflow-hidden rounded-t-[1.5rem] w-[100%] h-[30rem]">
         <img
-          src={blogpost}
+          src='img/blogpost.jpg'
           draggable="false"
           className="w-[100%] h-[100%] object-cover rounded-t-[1.5rem] hover:scale-125 transition duration-500 ease-in-out"
           alt=""

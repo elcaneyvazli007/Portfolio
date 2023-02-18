@@ -1,7 +1,5 @@
 import React from "react";
 import Blogcard from "../components/blogcard";
-import blogpost from "../img/blogpost.jpg";
-import Buttonlink from "../components/buttonlink";
 
 const blog = () => {
   return (

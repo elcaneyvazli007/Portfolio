@@ -1,5 +1,4 @@
 import React from "react";
-import portfolioimg from "../img/portfolio.png";
 import Modal from "../components/modal";
 
 const Portfolio = () => {
@@ -12,23 +11,7 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      src: "https://i.ibb.co/0nZ3Z3r/1.png",
-    },
-    {
-      id: 3,
-      src: "https://i.ibb.co/0nZ3Z3r/1.png",
-    },
-    {
-      id: 4,
-      src: "https://i.ibb.co/0nZ3Z3r/1.png",
-    },
-    {
-      id: 5,
-      src: "https://i.ibb.co/0nZ3Z3r/1.png",
-    },
-    {
-      id: 6,
-      src: "https://i.ibb.co/0nZ3Z3r/1.png",
+      src: "img/portfolio.png",
     },
   ];
 

@@ -1,5 +1,4 @@
 import React from "react";
-import profil from "../img/2.jpg";
 import Experience from "../components/experience";
 import Education from "../components/education";
 import Progress from "../components/progress";
@@ -78,7 +77,7 @@ const about = () => {
         </h1>
         <div className="flex flex-col md:flex-row items-center justify-between gap-10">
           <img
-            src={profil}
+            src='img/2.jpg'
             draggable="false"
             alt=""
             className="rounded-full border-4 border-primary w-[30rem] md:w-[44rem] h-[30rem] md:h-[44rem] object-cover"

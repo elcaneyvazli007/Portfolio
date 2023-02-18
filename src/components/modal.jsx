@@ -6,7 +6,6 @@ import {
 } from "react-icons/ai";
 import { BsPersonPlus, BsCodeSlash } from "react-icons/bs";
 import {GiMoneyStack} from "react-icons/gi";
-import portfolioimg from "../img/portfolio.png";
 import Button from '../components/button'
 
 const modal = ({ modal, setModal }) => {
@@ -14,7 +13,7 @@ const modal = ({ modal, setModal }) => {
     <div className="fixed h-screen w-screen top-0 left-0 after:content-[''] after:absolute after:w-screen after:h-screen after:top-0 after:left-0 after:bg-grey after:opacity-[60%] grid place-content-end">
       <div className="relative flex flex-col z-50 items-start p-[5rem] w-[30rem] sm:w-[50rem] md:w-[70rem] h-screen bg-grey">
         <img
-          src={portfolioimg}
+          src='img/portfolio.png'
           draggable="false"
           className="w-full h-[10rem] sm:h-[20rem] md:h-[30rem] object-cover rounded-[1rem]"
           alt=""
