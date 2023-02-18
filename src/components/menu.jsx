@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import menue from "../img/menu.svg";
-import close from "../img/close.svg";
 import {AiFillHome} from 'react-icons/ai'
 import {BsFillPersonLinesFill,BsFillTelephoneFill,BsNewspaper} from 'react-icons/bs'
 import {MdOutlineWork} from 'react-icons/md'
@@ -14,7 +12,7 @@ const Menu = () => {
       <div className="flex flex-col items-center">
         <img
           onClick={() => setToogle(!toogle)}
-          src={toogle ? close : menue}
+          src={toogle ? 'img/close.svg' : 'img/menu.svg'}
           alt=""
           className="w-[3rem] h-[3rem]"
         />

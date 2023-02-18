@@ -1,5 +1,5 @@
 .home{
-    background-image: url(../img/home.svg);
+    background-image: url(../../public/img/home.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,7 +7,7 @@
 
 @media screen and (max-width: 768px) {
     .home{
-        background-image: url(../img/home2.svg);
+        background-image: url(../../public/img/home2.svg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
