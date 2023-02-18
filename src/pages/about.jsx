@@ -1,9 +1,75 @@
 import React from "react";
 import profil from "../img/2.jpg";
 import Experience from "../components/experience";
+import Education from "../components/education";
 import Progress from "../components/progress";
 
 const about = () => {
+  const cols1 = [
+    {
+      id: 1,
+      title: "First Name",
+      text: "Elcan",
+    },
+    {
+      id: 2,
+      title: "Last Name",
+      text: "Eyvazlı",
+    },
+    {
+      id: 3,
+      title: "Birthdate",
+      text: "29.05.2003",
+    },
+    {
+      id: 4,
+      title: "Nationality",
+      text: "Azerbaijan",
+    },
+    {
+      id: 5,
+      title: "Experience",
+      text: "1 Year",
+    },
+    {
+      id: 6,
+      title: "Address",
+      text: "Sumqayit",
+    },
+  ];
+  const cols2 = [
+    {
+      id: 1,
+      title: "Freelance",
+      text: "Available",
+    },
+    {
+      id: 2,
+      title: "Languages",
+      text: "English",
+    },
+    {
+      id: 3,
+      title: "Phone",
+      text: "+994513910242",
+    },
+    {
+      id: 4,
+      title: "Email",
+      text: "elcaneyvazli77@gmail.com",
+    },
+    {
+      id: 5,
+      title: "Degree",
+      text: "Bachelor",
+    },
+    {
+      id: 6,
+      title: "Github",
+      text: "elcaneyvazli007",
+    },
+  ];
+
   return (
     <div className="bg-black mb-[5rem]">
       <div className="container mx-auto">
@@ -20,45 +86,26 @@ const about = () => {
           <div className="flex flex-col gap-10">
             <div className="flex flex-col lg:flex-row items-start md:items-center justify-center gap-5">
               <div className="flex flex-col pr-[0rem] md:pr-[10rem] gap-5">
-                <p className="text-[1.6rem] text-white font-normal">
-                  First Name:<span className="font-bold">Elcan</span>
-                </p>
-                <p className="text-[1.6rem] text-white font-normal">
-                  Last Name:<span className="font-bold">Eyvazlı </span>
-                </p>
-                <p className="text-[1.6rem] text-white font-normal">
-                  Birthdate:<span className="font-bold">29.05.2003</span>
-                </p>
-                <p className="text-[1.6rem] text-white font-normal">
-                  Nationality:<span className="font-bold">Azerbaijan</span>
-                </p>
-                <p className="text-[1.6rem] text-white font-normal">
-                  Experience:<span className="font-bold">1 Year</span>
-                </p>
-                <p className="text-[1.6rem] text-white font-normal">
-                  Address:<span className="font-bold">Sumqayit</span>
-                </p>
+                {cols1.map((col1) => (
+                  <p
+                    className="text-[1.6rem] text-white font-normal"
+                    key={col1.id}
+                  >
+                    {col1.title}:{" "}
+                    <span className="font-bold"> {col1.text}</span>
+                  </p>
+                ))}
               </div>
               <div className="flex flex-col gap-5">
-                <p className="text-[1.6rem] text-white font-normal">
-                  Freelance:<span className="font-bold">Available</span>
-                </p>
-                <p className="text-[1.6rem] text-white font-normal">
-                  Langages:<span className="font-bold">English</span>
-                </p>
-                <p className="text-[1.6rem] text-white font-normal">
-                  Phone:<span className="font-bold">+994513910242</span>
-                </p>
-                <p className="text-[1.6rem] text-white font-normal">
-                  Email:
-                  <span className="font-bold">elcaneyvazli77@gmail.com</span>
-                </p>
-                <p className="text-[1.6rem] text-white font-normal">
-                  Degree:<span className="font-bold">Bachelor</span>
-                </p>
-                <p className="text-[1.6rem] text-white font-normal">
-                  Github:<span className="font-bold">elcaneyvazli007 </span>
-                </p>
+                {cols2.map((col2) => (
+                  <p
+                    className="text-[1.6rem] text-white font-normal"
+                    key={col2.id}
+                  >
+                    {col2.title}:{" "}
+                    <span className="font-bold"> {col2.text}</span>
+                  </p>
+                ))}
               </div>
             </div>
             <a
@@ -79,8 +126,7 @@ const about = () => {
                 Education
               </h1>
               <div>
-                <Experience />
-                <Experience />
+                <Education />
               </div>
             </div>
             <div className="flex flex-col items-start flex-1 gap-10">
@@ -88,7 +134,6 @@ const about = () => {
                 Experience
               </h1>
               <div>
-                <Experience />
                 <Experience />
               </div>
             </div>
@@ -100,13 +145,6 @@ const about = () => {
         <div className="flex flex-col items-start gap-10">
           <h1 className="text-[3rem] text-white font-bold">Skills</h1>
           <div className="flex md:flex-row flex-col flex-wrap items-start gap-[3rem]">
-            <Progress />
-            <Progress />
-            <Progress />
-            <Progress />
-            <Progress />
-            <Progress />
-            <Progress />
             <Progress />
           </div>
         </div>
