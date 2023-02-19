@@ -3,54 +3,58 @@ import "./blogcard.css";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-const blogcard = () => {
+const blogcard = ({ blogsData }) => {
   return (
-    <div className="flex flex-col items-start gap-[1rem] bg-grey rounded-[2rem]">
-      <div className="overflow-hidden rounded-t-[1.5rem] w-[100%] h-[30rem]">
-        <img
-          src='img/blogpost.jpg'
-          draggable="false"
-          className="w-[100%] h-[100%] object-cover rounded-t-[1.5rem] hover:scale-125 transition duration-500 ease-in-out"
-          alt=""
-        />
-      </div>
-      <div className="p-[1.5rem] flex flex-col gap-[2rem]">
-        <div className="flex flex-row gap-[1rem]">
-          <div className="bg-[#00000099] py-[1.2rem] px-[2rem] rounded-[1rem]">
-            <p className="text-white text-[1.4rem] hover-underline-animation">
-              Business
-            </p>
+    <>
+      {blogsData.map((blog) => (
+        <div className="flex flex-col items-start gap-[1rem] bg-grey rounded-[2rem]">
+          <div className="overflow-hidden rounded-t-[1.5rem] w-[100%] h-[30rem]">
+            <img
+              src={blog.image}
+              draggable="false"
+              className="w-[100%] h-[100%] object-cover rounded-t-[1.5rem] hover:scale-125 transition duration-500 ease-in-out"
+              alt=""
+            />
           </div>
-          <div className="bg-[#00000099] py-[1.2rem] px-[2rem] rounded-[1rem]">
-            <p className="text-white text-[1.4rem] hover-underline-animation">
-              Idea
-            </p>
-          </div>
-          <div className="bg-[#00000099] py-[1.2rem] px-[2rem] rounded-[1rem]">
-            <p className="text-white text-[1.4rem] hover-underline-animation">
-              Story
-            </p>
+          <div className="p-[1.5rem] flex flex-col gap-[2rem]">
+            <div className="flex flex-row gap-[1rem]">
+              <div className="bg-[#00000099] py-[1.2rem] px-[2rem] rounded-[1rem]">
+                <p className="text-white text-[1.4rem] hover-underline-animation">
+                  Business
+                </p>
+              </div>
+              <div className="bg-[#00000099] py-[1.2rem] px-[2rem] rounded-[1rem]">
+                <p className="text-white text-[1.4rem] hover-underline-animation">
+                  Idea
+                </p>
+              </div>
+              <div className="bg-[#00000099] py-[1.2rem] px-[2rem] rounded-[1rem]">
+                <p className="text-white text-[1.4rem] hover-underline-animation">
+                  Story
+                </p>
+              </div>
+            </div>
+            <div>
+              <h1 className="text-primary text-[2.5rem] font-extrabold">
+                {blog.title}
+              </h1>
+              <p className="text-white text-[1.6rem] font-normal flex-1">
+                {blog.text1}
+              </p>
+            </div>
+            <div className="flex flex-row items-center gap-[1rem]">
+              <div className="w-[5rem] h-[.1rem] bg-primary"></div>
+              <Link to="/blogtext" className="">
+                <p className="text-white text-[1.8rem] font-bold hover-underline-animation">
+                  Read More
+                </p>
+              </Link>
+              <AiOutlineArrowRight className="text-white w-[1.5rem] h-[1.5rem]" />
+            </div>
           </div>
         </div>
-        <div>
-          <h1 className="text-primary text-[2.5rem] font-extrabold">
-            Create a Wordpress theme from Scractch
-          </h1>
-          <p className="text-white text-[1.6rem] font-normal flex-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit
-            massa vel mauris Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit.
-          </p>
-        </div>
-        <div className="flex flex-row items-center gap-[1rem]">
-          <div className="w-[5rem] h-[.1rem] bg-primary"></div>
-          <Link to="/blogtext" className="">
-            <p className="text-white text-[1.8rem] font-bold hover-underline-animation">Read More</p>
-          </Link>
-          <AiOutlineArrowRight className="text-white w-[1.5rem] h-[1.5rem]"/>
-        </div>
-      </div>
-    </div>
+      ))}
+    </>
   );
 };
 

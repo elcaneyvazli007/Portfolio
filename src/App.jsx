@@ -7,19 +7,22 @@ import Contact from "./pages/contact";
 import Blog from "./pages/blog";
 import Blogtext from "./components/blogtext";
 import { Routes, Link, Route } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   return (
     <div className="App">
-      <Menu />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blogtext" element={<Blogtext />} />
-      </Routes>
+      <AnimatePresence initial={false} mode={'wait'}>
+        <Menu />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blogtext" element={<Blogtext />} />
+        </Routes>
+      </AnimatePresence>
     </div>
   );
 }

@@ -29,14 +29,14 @@ const Portfolio = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[3rem]">
           {portdatas.map((portdata) => (
-              <img
-                src={portdata.src}
-                key={portdata.id}
-                onClick={() => setModal(!modal)}
-                draggable="false"
-                alt=""
-                className="w-full h-[30rem] object-cover rounded-[1rem]"
-              />
+            <img
+              src={portdata.src}
+              key={portdata.id}
+              onClick={() => setModal(!modal)}
+              draggable="false"
+              alt=""
+              className="w-full h-[30rem] object-cover rounded-[1rem]"
+            />
           ))}
 
           {modal && <Modal modal={modal} setModal={setModal} />}

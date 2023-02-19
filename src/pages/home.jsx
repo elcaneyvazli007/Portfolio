@@ -1,14 +1,27 @@
 import React from "react";
-import './home.css'
+import "./home.css";
 import Typical from "react-typical";
 import Buttonlink from "../components/buttonlink";
+import { motion } from "framer-motion";
 const home = () => {
   return (
-    <div className="home h-screen w-screen flex items-center">
+    <motion.div
+      className="home h-screen w-screen flex items-center"
+    >
       <div className="container w-[100%] mx-auto">
         <div className="flex md:flex-row flex-col items-center justify-between gap-[10rem]">
-          <img
-            src='img/2.jpg'
+          <motion.img
+            drag
+            dragConstraints={{
+              top: -10,
+              left: -10,
+              right: 10,
+              bottom: 10,
+            }}
+            dragElastic={0.5}
+            whileTap={{ scale: 0.9 }}
+            dragMomentum={true}
+            src="img/2.jpg"
             draggable="false"
             alt=""
             className="md:w-[40rem] md:h-[40rem] h-[30rem] w-[30rem] rounded-full object-cover border-4 border-primary"
@@ -17,8 +30,15 @@ const home = () => {
           <div className="flex-1">
             <div className="flex items-center">
               <div className="w-[7rem] h-[.1rem] bg-primary mx-[1rem]"></div>
-              <h1 className="text-[4rem] text-white mr-[1rem] font-bold">Hi, There</h1>
-              <img src='img/hand.svg' alt="" className="w-[5rem] h-[5rem]" />
+              <h1 className="text-[4rem] text-white mr-[1rem] font-bold">
+                Hi, There
+              </h1>
+              <img
+                src="img/hand.svg"
+                draggable="false"
+                alt=""
+                className="w-[5rem] h-[5rem]"
+              />
             </div>
             <h1 className="text-white md:text-[4rem] text-[2rem] flex">
               I'm
@@ -45,13 +65,13 @@ const home = () => {
               design.
             </p>
             <div className="flex items-center gap-10 pt-[3rem]">
-              <Buttonlink text="More About Me" link="/about"/>
-              <Buttonlink text="Portfolio" link="/portfolio"/>
+              <Buttonlink text="More About Me" link="/about" />
+              <Buttonlink text="Portfolio" link="/portfolio" />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
