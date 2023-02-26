@@ -8,11 +8,12 @@ import {
 } from "react-icons/bs";
 import { MdOutlineWork } from "react-icons/md";
 import { motion } from "framer-motion";
-import OutsideClickHandler from "react-outside-click-handler";
 
 const Menu = () => {
   const [toogle, setToogle] = useState(false);
-
+  const closemenu = () => {
+    setToogle(false);
+  };
   return (
     <motion.div
       className={`absolute top-[2rem] left-[2rem] z-100 bg-grey rounded-full ${
@@ -27,16 +28,16 @@ const Menu = () => {
           className="w-[3rem] h-[3rem]"
         />
       </div>
-      <OutsideClickHandler onOutsideClick={() => setToogle(false)}>
         {toogle && (
           <div className="flex flex-col items-center gap-[2rem] py-[3rem]">
-            <Link to="/" className="flex flex-col items-center justify-between">
+            <Link to="/" onClick={closemenu} className="flex flex-col items-center justify-between">
               <AiFillHome className="text-white w-[2rem] h-[2rem]" />
               <p className="text-white text-[1.4rem]">Home</p>
             </Link>
 
             <Link
               to="/about"
+              onClick={closemenu}
               className="flex flex-col items-center justify-between"
             >
               <BsFillPersonLinesFill className="text-white w-[2rem] h-[2rem]" />
@@ -45,6 +46,7 @@ const Menu = () => {
 
             <Link
               to="/portfolio"
+              onClick={closemenu}
               className="flex flex-col items-center justify-between"
             >
               <MdOutlineWork className="text-white w-[2rem] h-[2rem]" />
@@ -53,6 +55,7 @@ const Menu = () => {
 
             <Link
               to="/contact"
+              onClick={closemenu}
               className="flex flex-col items-center justify-between"
             >
               <BsFillTelephoneFill className="text-white w-[2rem] h-[2rem]" />
@@ -61,6 +64,7 @@ const Menu = () => {
 
             <Link
               to="/blog"
+              onClick={closemenu}
               className="flex flex-col items-center justify-between"
             >
               <BsNewspaper className="text-white w-[2rem] h-[2rem]" />
@@ -68,7 +72,6 @@ const Menu = () => {
             </Link>
           </div>
         )}
-      </OutsideClickHandler>
     </motion.div>
   );
 };
