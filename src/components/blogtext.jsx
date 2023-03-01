@@ -7,7 +7,7 @@ const blogtext = () => {
       <div className=" flex flex-col md:flex-row items-center md:items-start gap-[3rem] mb-[3rem] border-b-4 border-primary pb-[1rem]">
         <div className="flex-1 rounded-[1.5rem] md:w-[30rem] md:h-[30rem] lg:w-[50rem] lg:h-[50rem] overflow-hidden ">
           <img
-            src='img/blogpost1.jpg'
+            src='img/blogpost.jpg'
             draggable="false"
             className="w-[100%] h-[100%] object-cover rounded-[1.5rem] hover:scale-125 transition duration-500 ease-in-out"
             alt="blog"
