@@ -10,10 +10,8 @@ import Button from "../components/button";
 
 const modal = ({ modal, setModal }) => {
   return (
-    <div className="fixed h-screen w-screen top-0 left-0 after:content-[''] after:absolute after:w-screen after:h-screen after:top-0 after:left-0 after:bg-grey after:opacity-[60%] grid place-content-end">
-      <div
-        className="relative flex flex-col z-50 items-start p-[5rem] w-[30rem] sm:w-[50rem] md:w-[70rem] h-screen bg-grey"
-      >
+    <div className="fixed h-screen w-screen top-0 right-0 bottom-0 after:content-[''] after:absolute after:w-screen after:h-screen after:top-0 after:right-0 after:bg-grey after:opacity-[60%] flex justify-end items-end mr-[0rem]">
+      <div className="relative flex flex-col z-50 items-start p-[5rem] w-[30rem] sm:w-[50rem] md:w-[70rem] h-screen bg-grey">
         <img
           src="img/portfolio.png"
           draggable="false"

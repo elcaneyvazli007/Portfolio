@@ -2,8 +2,9 @@ import React from "react";
 import "./blogcard.css";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import  blogsData from "./blogsdata";
 
-const blogcard = ({ blogsData }) => {
+const blogcard = () => {
   return (
     <>
       {blogsData.map((blog) => (
@@ -44,7 +45,7 @@ const blogcard = ({ blogsData }) => {
             </div>
             <div className="flex flex-row items-center gap-[1rem]">
               <div className="w-[5rem] h-[.1rem] bg-primary"></div>
-              <Link to="/blogtext" className="">
+              <Link to={`/blogtext/${blog.id}`} className="">
                 <p className="text-white text-[1.8rem] font-bold hover-underline-animation">
                   Read More
                 </p>

@@ -20,7 +20,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blogtext" element={<Blogtext />} />
+          <Route path="/blogtext/:blogsId" element={<Blogtext />} />
         </Routes>
       </AnimatePresence>
     </div>
