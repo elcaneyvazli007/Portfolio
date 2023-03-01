@@ -2,6 +2,7 @@ import React from "react";
 import Experience from "../components/experience";
 import Education from "../components/education";
 import Progress from "../components/progress";
+import { motion } from "framer-motion";
 
 const about = () => {
   const cols1 = [
@@ -70,17 +71,27 @@ const about = () => {
   ];
 
   return (
-    <div className="bg-black mb-[5rem]">
+    <motion.div className="bg-black mb-[5rem]">
       <div className="container mx-auto">
         <h1 className="text-[4rem] md:text-[6rem] text-white font-black text-center mt-[8rem] md:mt-[0rem]">
           About <span className="text-primary"> Me </span>{" "}
         </h1>
         <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-          <img
-            src='img/2.jpg'
+          <motion.img
+            drag
+            dragConstraints={{
+              top: -10,
+              left: -10,
+              right: 10,
+              bottom: 10,
+            }}
+            dragElastic={0.5}
+            whileTap={{ scale: 0.9 }}
+            dragMomentum={true}
+            src="img/2.jpg"
             draggable="false"
             alt=""
-            className="rounded-full border-4 border-primary w-[30rem] md:w-[44rem] h-[30rem] md:h-[44rem] object-cover"
+            className="cursor-pointer rounded-full border-4 border-primary w-[30rem] md:w-[44rem] h-[30rem] md:h-[44rem] object-cover"
           />
           <div className="flex flex-col gap-10">
             <div className="flex flex-col lg:flex-row items-start md:items-center justify-center gap-5">
@@ -148,7 +159,7 @@ const about = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -24,7 +24,7 @@ const home = () => {
             src="img/2.jpg"
             draggable="false"
             alt=""
-            className="md:w-[40rem] md:h-[40rem] h-[30rem] w-[30rem] rounded-full object-cover border-4 border-primary"
+            className="cursor-pointer md:w-[40rem] md:h-[40rem] h-[30rem] w-[30rem] rounded-full object-cover border-4 border-primary"
           />
 
           <div className="flex-1">
