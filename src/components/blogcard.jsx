@@ -8,10 +8,10 @@ const blogcard = () => {
   return (
     <>
       {blogsData.map((blog) => (
-        <div className="flex flex-col items-start gap-[1rem] bg-grey rounded-[2rem]">
+        <div key={blog.id} className="flex flex-col items-start gap-[1rem] bg-grey rounded-[2rem]">
           <div className="overflow-hidden rounded-t-[1.5rem] w-[100%] h-[30rem]">
             <img
-              src={blog.image}
+              src={blog.image1}
               draggable="false"
               className="w-[100%] h-[100%] object-cover rounded-t-[1.5rem] hover:scale-125 transition duration-500 ease-in-out"
               alt=""

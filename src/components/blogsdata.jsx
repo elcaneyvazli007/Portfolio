@@ -5,7 +5,8 @@ export default [
     category: ["Business", "Idea", "Story"],
     name: "Elcan Eyvazli",
     date: "12.12.2021",
-    image: "img/blogpost1.jpg",
+    image1: "img/blogpost1.jpg",
+    image2: "img/2.jpg",
     text1:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     text2:
@@ -17,7 +18,8 @@ export default [
     category: ["Business", "Idea", "Story"],
     name: "Elcan Eyvazli",
     date: "12.12.2021",
-    image: "img/blogpost2.jpg",
+    image1: "img/blogpost2.jpg",
+    image2: "img/2.jpg",
     text1:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     text2:
@@ -29,7 +31,8 @@ export default [
     category: ["Business", "Idea", "Story"],
     name: "Elcan Eyvazli",
     date: "12.12.2021",
-    image: "img/blogpost3.jpg",
+    image1: "img/blogpost3.jpg",
+    image2: "img/2.jpg",
     text1:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     text2:
@@ -41,7 +44,8 @@ export default [
     category: ["Business", "Idea", "Story"],
     name: "Elcan Eyvazli",
     date: "12.12.2021",
-    image: "img/blogpost4.jpg",
+    image1: "img/blogpost4.jpg",
+    image2: "img/2.jpg",
     text1:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     text2:
@@ -53,7 +57,8 @@ export default [
     category: ["Business", "Idea", "Story"],
     name: "Elcan Eyvazli",
     date: "12.12.2021",
-    image: "img/blogpost5.jpg",
+    image1: "img/blogpost5.jpg",
+    image2: "img/2.jpg",
     text1:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     text2:
