@@ -9,31 +9,23 @@ const blogcard = () => {
     <>
       {blogsData.map((blog) => (
         <div key={blog.id} className="flex flex-col items-start gap-[1rem] bg-grey rounded-[2rem]">
-          <div className="overflow-hidden rounded-t-[1.5rem] w-[100%] h-[30rem]">
+          <div className="overflow-hidden rounded-t-[1.5rem] w-[100%] h-[25rem]">
             <img
-              src={blog.image1}
+              src={blog.img}
               draggable="false"
               className="w-[100%] h-[100%] object-cover rounded-t-[1.5rem] hover:scale-125 transition duration-500 ease-in-out"
               alt=""
             />
           </div>
-          <div className="p-[1.5rem] flex flex-col gap-[2rem]">
+          <div className="p-[1.5rem] flex flex-col justify-between gap-[1rem]">
             <div className="flex flex-row gap-[1rem]">
-              <div className="bg-[#00000099] py-[1.2rem] px-[2rem] rounded-[1rem]">
+              {blog.category.map((blogcat) => (
+                <div className="bg-[#00000099] py-[1.2rem] px-[2rem] rounded-[1rem]">
                 <p className="text-white text-[1.4rem] hover-underline-animation">
-                  Business
+                  {blogcat}
                 </p>
               </div>
-              <div className="bg-[#00000099] py-[1.2rem] px-[2rem] rounded-[1rem]">
-                <p className="text-white text-[1.4rem] hover-underline-animation">
-                  Idea
-                </p>
-              </div>
-              <div className="bg-[#00000099] py-[1.2rem] px-[2rem] rounded-[1rem]">
-                <p className="text-white text-[1.4rem] hover-underline-animation">
-                  Story
-                </p>
-              </div>
+              ))}
             </div>
             <div>
               <h1 className="text-primary text-[2.5rem] font-extrabold">
