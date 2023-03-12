@@ -3,15 +3,22 @@ import Modal from "../components/modal";
 
 const Portfolio = () => {
   const [modal, setModal] = React.useState(false);
+  const [port, setPort] = React.useState({});
+  const changeContext = (portdata) => {
+    setPort([portdata]);
+  };
 
   const portdatas = [
     {
       id: 1,
       src: "img/portfolio.png",
-    },
-    {
-      id: 2,
-      src: "img/portfolio.png",
+      pname : "Proje Name",
+      type : "Website",
+      client : "Azerbaijan Future Studies Society",
+      duration : "1 month",
+      techn : "Html, Css, JavaScript",
+      budget : "1000$",
+      link : "https://demo.futurestudies.az/"
     },
   ];
 
@@ -32,14 +39,14 @@ const Portfolio = () => {
               <img
                 src={portdata.src}
                 key={portdata.id}
-                onClick={() => setModal(!modal)}
+                onClick={() => {setModal(!modal); changeContext(portdata);} }
                 draggable="false"
                 alt=""
                 className="w-full h-[30rem] object-cover rounded-[1rem]"
               />
             ))}
 
-            {modal && <Modal modal={modal} setModal={setModal} />}
+            {modal && <Modal modal={modal} setModal={setModal} portdatas={portdatas} setPort={setPort} port={port}/>}
           </div>
         </div>
     </div>

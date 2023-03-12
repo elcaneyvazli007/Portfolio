@@ -6,7 +6,7 @@ import Portfolio from "./pages/portfolio";
 import Contact from "./pages/contact";
 import Blog from "./pages/blog";
 import Blogtext from "./components/blogtext";
-import { Routes, Link, Route } from "react-router-dom";
+import { BrowserRouter,Routes, Link, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 function App() {

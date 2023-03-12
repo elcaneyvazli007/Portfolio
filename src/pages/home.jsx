@@ -8,7 +8,7 @@ const home = () => {
   return (
     <motion.div className="home h-screen w-screen flex items-center">
         <div className="container w-[100%] mx-auto">
-          <div className="flex md:flex-row flex-col items-center justify-between gap-[10rem]">
+          <div className="flex lg:flex-row flex-col items-center justify-between gap-[10rem]">
             <motion.img
               initial={{ x: 0, y: 0 }}
               animate={{ x: 0, y: 0 }}
@@ -32,7 +32,7 @@ const home = () => {
             <div className="flex-1">
               <div className="flex items-center">
                 <div className="w-[7rem] h-[.1rem] bg-primary mx-[1rem]"></div>
-                <h1 className="text-[4rem] text-white mr-[1rem] font-bold">
+                <h1 className="text-[3rem] md:text-[2rem] lg:text-[4rem] text-white mr-[1rem] font-bold">
                   Hi, There
                 </h1>
                 <img
